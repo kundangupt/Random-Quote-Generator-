@@ -10,4 +10,4 @@ async function getQuote(url){
    auther.innerHTML= data.auther;
 }
 
-getQuote();
+getQuote(api_url);
