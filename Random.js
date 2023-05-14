@@ -5,7 +5,7 @@ let Quote = document.getElementById('Quote');
 async function getQuote(url){
    const response = await fetch(url);
    var data = await response.json();
-   Quote.innerHTML = data.author  ;
+   Quote.innerHTML = data.author;
    author.innerHTML = data.content;
    
 }
