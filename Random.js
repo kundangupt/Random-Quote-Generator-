@@ -1,6 +1,6 @@
 let api_url = "http://api.quotable.io/random";
-let Quote  = document.getElementById('Quote');
 let author = document.getElementById('author');
+let Quote = document.getElementById('Quote');
 
 async function getQuote(url){
    const response = await fetch(url);
@@ -10,3 +10,7 @@ async function getQuote(url){
    
 }
 getQuote(api_url);
+
+function tweet(){
+   window.open(href="https://twitter.com/intent/tweet?text=" + Quote.innerHTML +  "-------by"   +  author.innerHTML , "Tweet Window" , "width= 600, height= 300")
+}
